@@ -1,0 +1,40 @@
+.p-heading {
+  font-family: "Josefin Slab", serif;
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+}
+.product-container {
+  /* display: flex; */
+  justify-content: center;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+
+.type {
+  margin-top: 20px;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.range .type {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  /* Add more styling as needed */
+}
+
+/* Add a border around the select dropdown */
+.range .type {
+  border: 2px solid #007bff;
+}
+
+/* Adjust the border color on focus */
+.range .type:focus {
+  border-color: #0056b3;
+}

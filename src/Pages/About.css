@@ -1,0 +1,204 @@
+body {
+  background: white;
+  overflow-x: hidden;
+}
+
+.c-heading {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.c-heading h1 {
+  font-size: 50px;
+  color: black;
+  margin-right: 25px;
+  position: relative;
+  margin-bottom: 75px;
+}
+
+.c-heading h1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #4caf50;
+}
+
+.c-heading p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+/* Contact form */
+.contact-form {
+  background: rgba(34, 51, 40, 0.8);
+  max-width: 100%;
+  border-radius: 4px;
+  padding: 55px 30px;
+  color: var(--background-color-white);
+}
+.contact-form .c-title h2 {
+  letter-spacing: 6px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+}
+.contact-form .half {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form .half .c-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+.contact-form .half .c-item input {
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  background: transparent;
+  font-size: 17px;
+  color: var(--background-color-white);
+}
+
+.contact-form .full {
+  margin-bottom: 24px;
+}
+
+.contact-form .full textarea {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 95%;
+  height: 200px;
+  font-size: 17px;
+  color: var(--background-color-white);
+}
+
+.contact-form .action {
+  margin-bottom: 32px;
+}
+
+.contact-form .action input {
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600px;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+.contact-form .action input[type="submit"] {
+  background: white;
+  color: black;
+}
+.contact-form .icon a {
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  width: 38px;
+}
+
+/* background image */
+.middle-section {
+  width: 85%;
+  height: auto;
+  padding: 40px 5vw;
+}
+
+.middle-container {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  padding: 20px;
+}
+
+.section-middle-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  left: 0%;
+}
+
+.c-middle-info {
+  width: 50%;
+  height: 100%;
+  background: #030802;
+  display: block;
+  margin-left: auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.middle-title {
+  font-family: "Josefin Slab", serif;
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.info {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 25px;
+  line-height: 45px;
+  margin-top: 30px;
+  opacity: 0.5;
+}
+.bxl-youtube,
+.bxl-instagram,
+.bxl-twitter,
+.bxl-facebook-circle,
+.bxl-spotify {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.bxl-youtube:hover,
+.bxl-instagram:hover,
+.bxl-twitter:hover,
+.bxl-facebook-circle:hover,
+.bxl-spotify:hover {
+  animation: tada 0.8s infinite;
+}
+a:active {
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 767px) {
+  /* You can adjust the max-width value based on your phone screen size */
+  .c-middle-info {
+    width: auto;
+  }
+}
