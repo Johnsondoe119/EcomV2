@@ -78,7 +78,9 @@ const About = () => {
       <div class="c-heading">
         <h1>Featured Fits</h1>
       </div>
-      <Slideshow />
+      <div data-testid="slideshow">
+        <Slideshow />
+      </div>
     </div>
   );
 };
